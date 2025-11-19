@@ -20,7 +20,7 @@ struct ContentView: View {
             }
             Tab(Constants.searchString,
                 systemImage: Constants.searchIconString) {
-                Text(Constants.searchString)
+                SearchView()
             }
             Tab(Constants.downloadString,
                 systemImage: Constants.downloadIconString) {
