@@ -22,7 +22,7 @@ struct UpcomingView: View {
                         .frame(width: geometry.size.width,
                                height: geometry.size.height)
                 case .success:
-                    VerticalListView(titles: viewModel.upcomingMovies)
+                    VerticalListView(titles: viewModel.upcomingMovies, canDelete: false)
                 case .failed(let underlyingError):
                     Text(underlyingError.localizedDescription)
                 }
